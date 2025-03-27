@@ -11,10 +11,11 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        /* browser all */
+        /* browser will provide default value for margin and padding */
     }
     small ,div{
         background-color: aqua;
+        font-size: 15px;
     }
    
 </style>
@@ -25,7 +26,8 @@
     <h3>universal selector</h3>
     <p>it indicates with * </p>
     <p>it select all elements</p>
-    <hr><h3>grouping selector</h3>
+    <hr>
+    <h3>grouping selector</h3>
     <small>it is used to selected group of elements</small>
     <div>it is indicated with comma(,)</div>
     <hr>
@@ -56,7 +58,7 @@
         <p>it selects all adjacent elements</p>
         <pre>
             main ~ adjacentelement{
-                // it selects all adjacent elements
+                // it selects all siblings to the main elements
             }
         </pre>
     
