@@ -13,7 +13,7 @@ what is css
 how to use css (internal,external,and inline)
 1.Inline css
      syntax :
-       < style ="property: value  ; property2: value2"> content </>
+       < style ="property: value  ; property2: value2"> content </style>
    -used to style specific element 
 
 2.Internal css
