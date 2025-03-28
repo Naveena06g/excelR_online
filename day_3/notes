@@ -151,9 +151,9 @@ box model in css
 structure;
 
    content(text/image/video) 
-   ---->padding(space around  the content)
-   ----->border(outline around the content)
-   ------>margin(space outside the border, it helps to separates elements)
+   ----padding(space around  the content)
+   -----border(outline around the content)
+   ------margin(space outside the border, it helps to separates elements)
 
 
 
