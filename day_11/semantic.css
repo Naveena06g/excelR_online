@@ -37,7 +37,7 @@ main{
                          "article1  article2   aside";
 }
 section{
-    box-shadow: rgb(78,78,194) 0px 0px 0px 10px;
+    box-shadow: rgb(78,78,194) 0px 0px  10px;
     grid-area: section;
     margin: 10px;
     border-radius: 10px;
