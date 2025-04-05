@@ -5,33 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <style>
-        *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body{
     height: 100vh;
   
    
 }
 header{
-
-    height: 20%;
+    padding: 20px;
+    height: 15%;
     background-color: black;
     color: white;
-    text-align: center;
+   
+   
+   
+}
+.logo{
+    font-size: 25px;
+    margin-right: auto; 
 }
 ul{
     display: flex;
-    list-style: none;
-    align-items: ;
-    /* justify-content: space-evenly; */
-    margin-top: 20px;
+   align-items: flex-end;
+   list-style: none;
+   justify-content: space-evenly;
+    margin-top: 10px;
+    
 }
+
 main{
-    background-color: black;
+
+    display: grid;
+    background-color: rgb(26, 24, 24);
     color: white;
+    grid-area: "section    aside"
+               "section    aside";
 }
 aside{
     
@@ -39,31 +52,70 @@ aside{
     box-shadow: rgb(15, 15, 17) 0px 0px 10px ;
     border-radius: 20px;
     margin: 10px;
+    z-index: 9;
+    
+}
+section{
+    grid-area: section;
+    display: grid;
+   z-index: 88;
+    
+}
+.name{
+    color:  rgb(134, 50, 19);
+}
+.article1{
+   
+   padding: 20px;
+}
+.article2{
+    color: black;
+    
+    padding: 30px;
+}
+button:hover{
+    color:white;
+    background-color: rgb(134, 50, 19);
+    border: 1px solid rgb(134, 50, 19);
    
 }
+button{
+    padding: 10px;
+}
+figure{
+    
+    margin: 50px;
+    padding: 20px;
+    
+}
+img{
+    border-radius: 20%;
+}
+
     </style>
 </head>
 <body>
    <header>
-    <h2 align="left">Naveena</h2>
+   
     <nav>
         <ul>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">MY WORK</a></li>
+            <li class="logo">Naveena</li>
+            <li class="m"><a href="#">ABOUT ME</a></li>
+            <li class="m"><a href="#">SKILLS</a></li>
+            <li class="m"><a href="#">MY WORK</a></li>
         </ul>
     </nav>
    </header> 
    <main>
     <section>
-        <article>
+        <article class="article1">
         <h1>Hi,</h1>
-        <h1>I'm Naveena,</h1>
+        <h1 >I'm <span class="name">Naveena</span>,</h1>
         <h1>Web Designer.</h1>
         <p>CSS / JavaScript / React</p>
     </article>
-    <article>
-        <P>CONTACT ME</P>
+    <article class="article2">
+        <button>CONTACT ME</button>
     </article>
     </section>
     <aside >
