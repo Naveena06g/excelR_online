@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f27121, #8e44ad);      
+        }  
+        body{
+            padding: 20px;
+        }
+        .parent1{
+            
+           gap: 20px;
+           display: flex;
+           justify-content: center;
+           margin: 40px 0;
+        }
+   
+    
+        .parent {
+            display: flex;
+            align-items: flex-start;
+            height: 200px;
+            width: 1500px;
+            justify-content: center;
+           
+            background: linear-gradient(to bottom right, orange, gold);
+            border: 1px solid black;
+        }
+        .a{
+            display: flex;
+            align-items: flex-start;
+            justify-content:flex-start;
+        }
+        .b{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .c{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+        .d{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+        .e{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .f{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+        .g{
+            display: flex;
+            align-items:flex-start;
+            justify-content: flex-start;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            font-size: 10px;
+            background: linear-gradient(to bottom, #00f, #00a);
+           
+            border: 1px solid black;
+        }
+        .s{
+            display: flex;
+            align-items:center;
+            justify-content: flex-start;
+        }
+        .t{
+            display: flex;
+            align-items:flex-end;
+            justify-content: flex-start;
+        }
+        .u{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .v{
+            display: flex;
+            align-items:flex-end;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent1">
+
+    <div class="parent a">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent b">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent c">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent d">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent e">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent f">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent g">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+</div>
+<div class="parent1">
+    <div class="parent s">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent t">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent u">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+    <div class="parent v">
+        <div class="box one">Box1</div>
+        <div class="box two">Box2</div>
+        <div class="box three">Box3</div>
+    </div>
+</div>
+</body>
+</html>

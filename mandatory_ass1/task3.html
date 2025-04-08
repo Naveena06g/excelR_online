@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+   <h1>Form Input Controls Example</h1>
+   <form action="">
+    <fieldset>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name">
+    <br><br>
+
+    <label for="pwd">Password:</label>
+    <input type="pwd" name="pwd" id="pwd" placeholder="Enter your password">
+    <br><br>
+    <label for="email">Email </label>
+    <input type="email" placeholder="Enter your email" id="email" name="email">
+    <br><br>
+    <label for="age">Age</label>
+    <input type="number"  name="age" id="age" min="10" max="45">
+    <br><br>
+     <label for="rating">Rating:</label>
+     <input type="range" name="rating" id="rating">
+     <br><br>
+    <label for="dob">Date of Birth:</label>
+              <input type="date" name="dob" id="dob">
+              <br><br>
+    <label for="time">Time:</label>
+    <input type="time" name="time" id="time">
+    <br><br>
+              <label for="image">Image:</label>
+              <input type="file" name="image" id="image" accept="image/*" placeholder="150x50">
+    <br><br>
+    <label for="week">Week:</label>
+    <input type="week" name="week" id="week">
+    <br><br>
+    <label for="date">DateTime-Local:</label>
+    <input type="datetime-local" name="date" id="date">
+    <br><br>
+    <label for="url">URL:</label>
+    <input type="url" name="url" id="url">
+    <br><br>
+    <label for="search">Search:</label>
+    <input type="search" name="search" id="search">
+    <br><br>
+      <label for="gender">Gender</label>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Female</label> 
+     <br><br>        
+              <label for="">Interests:</label>
+
+            
+             <input type="checkbox" name="reading" id="reading">
+             <label for="reading">Reading</label>
+             <input type="checkbox" name="sports" id="sports">
+             <label for="Sports">Sports</label>
+    <br><br>
+             <label for="">Country:</label>
+             <select name="state" id="state" >
+                <option value="">United States</option>
+                
+                <option value="india">India</option>
+                <option value="others">Others</option>
+             </select>   
+    <br><br>
+<label for="msg">Message:</label>
+<textarea name="msg" id="msg">Message</textarea>
+<br><br>
+<button type="submit">Submit</button>
+</fieldset>
+</form>
+
+</body>
+</html>

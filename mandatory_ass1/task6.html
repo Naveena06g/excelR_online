@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        *{
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+        }
+        header{
+            height: 100px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer{
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }   
+        .a1{
+            grid-area: "article1";
+            background-color: rgb(175, 172, 172);
+            padding: 20px;
+        }    
+        .a2{
+            grid-area: "article2";
+            background-color: rgb(223, 219, 219);
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Header</h1>
+    </header>
+    <main>
+       <section>
+        <article class="a1">
+            <h2>Sidebar</h2><br>
+            <p>The monu or quick access content.</p>
+        </article>
+        <article class="a2">
+            <h2>Main Content</h2><br>
+            <p>The core website content should be displayed here.</p>
+        </article>
+       </section>
+    </main>
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+</html>    
