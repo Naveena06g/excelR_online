@@ -8,13 +8,33 @@
 <body>
     <h1>Bitwise Operator</h1>
     <p>it is used to perform bit wise operation </p>
+     
+
 
     <script>
         a=1;//0001
         b=5;//0101
+ 
+        /*
+        0001-1
+        0101-5
+        -----------
+        0001-1
+        */
         console.log(a&b); //set bit to 1 when the both bits are 1
+                /*
+        0001-1
+        0101-5
+        -----------
+        0101-5
+        */
         console.log(a|b);//set bit to 1 when one of two bits are 1
-        console.log(~a);
+                /*
+        0000000000000001-1
+        -----------
+        1111111111111110- -2 
+        */
+        console.log(~a);//inverts all bits
     </script>
 </body>
 </html>
