@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 100px;
+            background-color: red;
+            
+        }
+        .one{
+            /* default*/
+            overflow: visible;
+        }
+        .two{
+            overflow: hidden;
+        }
+        .three{
+            overflow: scroll;
+        }
+        .four{
+            overflow: auto;
+        }.five{
+            overflow:hidden ;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow</h1>
+    <p>it is used to hide/scroll the overflow content</p>
+    <p>it will work for block level elements and we need to mention a particular height</p>
+     <p>its a property of class</p>
+     <pre>
+        overflow: visible/hidden/scroll/auto;
+        overflow-x:(left/right)
+        overflow-y:(top/bottom)
+     </pre>
+
+
+
+    <p>this is visible/default</p>
+   <div class="box one">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aperiam deserunt ducimus, laudantium aspernatur molestias necessitatibus minima optio, eos eveniet officia veritatis sed laboriosam. Culpa consectetur recusandae quaerat aliquid sed, commodi dolores nostrum nam, at error architecto rem iure ea quis? Quis explicabo sunt placeat praesentium doloribus ducimus autem vel!
+  </div> 
+  <br><br><br><br><br>
+  <p>this is hidden</p>
+   <div class="box two">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aperiam deserunt ducimus, laudantium aspernatur molestias necessitatibus minima optio, eos eveniet officia veritatis sed laboriosam. Culpa consectetur recusandae quaerat aliquid sed, commodi dolores nostrum nam, at error architecto rem iure ea quis? Quis explicabo sunt placeat praesentium doloribus ducimus autem vel!
+   </div> 
+   <br><br><br><br><br>
+   <p>this is scroll</p>
+   <div class="box three">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam aperiam deserunt ducimus, laudantium aspernatur molestias necessitatibus minima optio, eos eveniet officia veritatis sed laboriosam. Culpa consectetur recusandae quaerat aliquid sed, commodi dolores nostrum nam, at error architecto rem iure ea quis? Quis explicabo sunt placeat praesentium doloribus ducimus autem vel!
+   </div> 
+   <br><br><br><br><br>
+   <div class="box four">
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet reprehenderit deleniti laborum mollitia. Incidunt error nobis voluptatibus tempore dolorum iste, ipsam voluptas blanditiis, numquam nam eos nostrum corrupti in consequuntur ab mollitia, tenetur distinctio atque vitae. Cupiditate nemo officiis tempora, nesciunt mollitia id, ad quam dolorem necessitatibus minus quis adipisci.
+   </div>
+   <br /><br /><br /><br /><br />
+   <div class="box five">
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum accusamus
+     nobis aliquam, cum ab dolorem placeat dolorum dignissimos consequuntur
+     possimus repellat vitae deleniti fugiat corrupti alias sequi eligendi
+     autem amet. Incidunt harum deserunt inventore. Expedita facere sed
+     asperiores voluptatibus quaerat temporibus excepturi. Repellat ullam eos
+     ea? Quidem unde dolor iure.
+   </div>
+</body>
+</html>
