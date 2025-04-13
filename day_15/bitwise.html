@@ -8,7 +8,23 @@
 <body>
     <h1>Bitwise Operator</h1>
     <p>it is used to perform bit wise operation </p>
-     
+     <p>
+        types:
+        <ul>
+            <li>& -and </li>
+            <li>| -or</li>
+            <li>^ -xor</li>
+            <li>~ -not</li>
+            <li><< -left shift</li>
+            <li>>> -right shift</li>
+        </ul>
+        realtime use cases:
+        <ul>
+            <li>low -level data manipulation</li>
+            <li>data encoding</li>
+            <li>encryption algorithms</li>
+        </ul>
+     </p>
 
 
     <script>
@@ -30,11 +46,28 @@
         */
         console.log(a|b);//set bit to 1 when one of two bits are 1
                 /*
+        0001-1
+        0101-5
+        -----------
+        0100-4
+        */
+        console.log(a^b);//sets bit to 1 when only one of two bits is 1
+                /*
         0000000000000001-1
         -----------
         1111111111111110- -2 
         */
         console.log(~a);//inverts all bits
+       /*
+       0101
+        1010
+        */
+        console.log(5<<1);//left shift-- shifts bits to the left side,add zeros on the right
+        /* 
+         0101
+        0010
+        */
+        console.log(5>>1);//right shift-- shifts bits to the right side,add zeros on the left
     </script>
 </body>
 </html>
