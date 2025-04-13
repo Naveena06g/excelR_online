@@ -1,351 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flipkartLogin</title>
-    <style>
-      * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-body {
-    font-size: 14px;
-    font-weight: 400;
-    background-color: #f1f3f6;
-    color: #212121;
-    line-height: 1.4;
-}
-html {
-    text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.VCR99n .wjcbtA, .VCR99n .yo2bZi {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
-}
-.VCR99n .wjcbtA {
-    margin: 16px auto 0;
-    width: 840px;
-    min-height: 350px;
-    position: relative;
-    max-width: inherit;
-    background-color: #fff;
-}
-.NXna7w {
-    color: #212121;
-    margin: 0 auto;
-    border-radius: 2px;
-    height: 528px;
-    max-width: 750px;
-    min-width: 650px;
-}
-.col, .row {
-    width: 100%;
-}
-.row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-.row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex
-;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-}
-.NXna7w .Q\+Pbkc.MEHv7B {
-    background-image: url(//static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png);
-    background-position: center 85%;
-    background-repeat: no-repeat;
-}
-.NXna7w .Q\+Pbkc {
-    background-color: #2874f0;
-    color: #fff;
-    padding: 40px 33px;
-    font-size: 15px;
-}
-.VCR99n .wjcbtA, .VCR99n .yo2bZi {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
-}
-.col-2-5 {
-    width: 40%;
-}
-.col {
-    display: inline-block;
-    vertical-align: top;
-}
-.col, .row {
-    width: 100%;
-}
-.NXna7w .Q\+Pbkc .KIOyzU {
-    font-size: 28px;
-    font-weight: 500;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-.Sm1-5F {
-    padding: 56px 35px 16px;
-    position: relative;
-    background-color: #fff;
-}
-.col-3-5 {
-    width: 60%;
-}
-.col {
-    display: inline-block;
-    vertical-align: top;
-}
-form {
-    display: block;
-    margin-top: 0em;
-    unicode-bidi: isolate;
-}
-.I-qZ4M {
-    position: relative;
-    margin-bottom: 34px;
-    font-size: 16px;
-}
-.r4vIwl {
-    padding: 8px 10px 10px 0;
-    width: 100%;
-    color: #000;
-    font-size: inherit;
-    background: #fff;
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
-}
-.UfYqpu {
-    position: relative;
-    display: block;
-    width: 100%;
-}
-.Gq-80a {
-    color: #878787;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    pointer-events: none;
-    left: 0;
-    top: 0;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    transition: -webkit-transform .2s ease;
-    transition: transform .2s ease;
-    transition: transform .2s ease, -webkit-transform .2s ease;
-    will-change: transform;
-    -webkit-transform-origin: left;
-    transform-origin: left;
-}
-label {
-    cursor: default;
-}
-.EpHS0A {
-    color: #878787;
-    font-size: 12px;
-    font-weight: 400;
-}
-.c9RDXR {
-    color: #2874f0;
-}
-a, img {
-    text-decoration: none;
-    color: inherit;
-    border: none;
-    outline: none;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.LSOAQH {
-    margin-top: 16px;
-}
-.QqFHMw._7Pd1Fp {
-    background: #fb641b;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
-    border: none;
-    color: #fff;
-}
-.twnTnD {
-    width: 100%;
-    height: 48px;
-    font-size: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-}
-.QqFHMw {
-    display: inline-block;
-    border-radius: 2px;
-    color: #212121;
-    padding: 10px 20px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: box-shadow .2s ease;
-    vertical-align: super;
-    background: #fff;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
-    border: 1px solid #e0e0e0;
-}
-button {
-    appearance: auto;
-    text-rendering: auto;
-    color: button text;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: button face;
-    margin: 0em;
-    padding-block: 1px;
-    padding-inline: 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
-}
-.ZJ3AS1 {
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.azBkHf {
-    color: #2874f0;
-    font-weight: 500;
-}
-a, img {
-    text-decoration: none;
-    color: inherit;
-    border: none;
-    outline: none;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
+  <meta charset="UTF-8">
+  <title>Flipkart Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: #f1f3f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-       
-    </style>
+    form {
+      width: 700px;
+      height: 500px;
+      display: flex;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left {
+      background-color: #2874f0;
+      color: white;
+      width: 40%;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .left p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .left img {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .right {
+      width: 60%;
+      background-color: #fff;
+      padding: 40px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      margin-bottom: 30px;
+    }
+
+    .right p {
+      font-size: 14px;
+      color: #878787;
+    }
+
+    .right a {
+      color: #2874f0;
+      text-decoration: none;
+    }
+
+    .otp-button {
+      background-color: #fb641b;
+      color: white;
+      padding: 12px;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #878787;
+    }
+
+    .signup a {
+      color: #2874f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  
-    <div class="VCR99n">
-        <div class="NXna7w row wjcbtA">
-            <div class="Q+Pbkc col col-2-5 MEHv7B yo2bZi">
-                <span class="KIOyzU">
-                    <span>Login</span>
-                </span>
-                <p class="FgTkdt">
-                    <span>Get access to your Orders, Wishlist and Recommendations</span>
-                </p>
-            </div>
-            <div class="Sm1-5F col col-3-5">
-                <div><form autocomplete="on">
-                    <div class="I-qZ4M vLRlQb">
-                        <input autocomplete="off" type="text" class="r4vIwl BV+Dqf" value="" fdprocessedid="g5dbsq">
-                        <span class="UfYqpu">
-                        </span>
-                        <label class="Gq-80a">
-                            <span>Enter Email/Mobile number</span>
-                        </label>
-                    </div>
-                    <div class="EpHS0A">By continuing, you agree to Flipkart's <a class="c9RDXR" target="_blank" href="/pages/terms">Terms of Use</a> and <a class="c9RDXR" target="_blank" href="/pages/privacypolicy">Privacy Policy</a>.
-                    </div>
-                    <div class="LSOAQH">
-                        <button class="QqFHMw twnTnD _7Pd1Fp" fdprocessedid="2ko07i">Request OTP</button>
-                    </div>
-                    <div class="ZJ3AS1">
-                        <a class="azBkHf" href="/account/login?signup=true">New to Flipkart? Create an account</a>
-                    </div>
-                </form>
-            </div>
-        </div>
+
+<form>
+  <!-- Left Section -->
+  <div class="left">
+    <h1>Login</h1>
+    <p>Get access to your Orders,<br> Wishlist and<br> Recommendations</p>
+    <img src="./task4media/Screenshot 2025-04-06 225203.png" alt="Login Illustration">
+  </div>
+
+  <!-- Right Section -->
+  <div class="right">
+    <input type="text" name="userInput" placeholder="Enter Email/Mobile number" required>
+    
+    <p>
+      By continuing, you agree to Flipkart's 
+      <a href="#">Terms of Use</a> and 
+      <a href="#">Privacy Policy</a>
+    </p>
+
+    <button type="submit" class="otp-button">Request OTP</button>
+
+    <div class="signup">
+      New to Flipkart? <a href="#">Create an account</a>
     </div>
-</div>
+  </div>
+</form>
+
 </body>
-</html>   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+</html>

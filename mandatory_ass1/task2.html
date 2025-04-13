@@ -6,22 +6,35 @@
     <title>MenuCard</title>
     <style>
     *{
-     /* border: 1px solid black;  */
     box-sizing: border-box;
     margin: 1px;
     padding: 0;
+    
+    }
+    body, html {
+      height: 1000px;
+      font-family: Arial, sans-serif;
+      /* background-color: #f1f3f6; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
     } 
     body{
         background-color: black;
+        width: 50vh;
     }
     h1{ 
         border: 1px solid black;
         text-align: center;
         padding: 10px;
         margin: 0;
+        width: 650px;
         background-color: yellow;
     }
     tbody{
+       
         background-color: black;
     }
     th{
@@ -33,6 +46,7 @@
     
     .sec1{
        border: 1px solid black;
+       
       grid-area: sec1;
       display: grid;
       grid-template-areas: "article1 article2 article3" ;
@@ -68,6 +82,7 @@
 <body>
 <h1><span> <u>MENU CARD</u></span></h1>
 <section class="sec1">
+    <!-- for table 1 -->
 <article class="article1">
 <table border="1px">
   <tbody>
@@ -113,7 +128,7 @@
 </tbody>
 </table>
 </article>
-   
+  <!-- for table 2 --> 
 <article class="article2">
     <table border="1px">
         
@@ -159,6 +174,7 @@
 
 </table>
 </article>
+<!-- for table 3 -->
 <article class="article3">
     <table border="1px">
     <tr>
@@ -204,6 +220,7 @@
 </article>
 </section>
 <section class="sec2">
+    <!-- for table 4 -->
 <article class="article4">
     <table border="1px">
     <tr>
@@ -251,6 +268,7 @@
     </tr>
 </table>
 </article>
+<!-- for table 5 -->
 <article class="article5">
     <table border="1px">
     <tr>
@@ -306,6 +324,7 @@
     </tr>
 </table>
 </article>
+<!-- for table 6 -->
 <article class="article6">
     <table border="1px">
     <tr>
