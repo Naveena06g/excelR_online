@@ -7,14 +7,12 @@
 </head>
 <body>
     <script>
-        let value=prompt('enter a number to get square of it')
-        let num=parseInt(value);
-
-        let square= (num)=>{
-            return num*num;
-           
+        (
+        function(){
+            console.log("immediately invoked function expression")
         }
-        document.write(`The square of ${num} is ${square(num)}`)
+
+        )();
     </script>
 </body>
 </html>

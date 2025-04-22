@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function* generatorFunction(){
+            yield "Hello";
+            yield "World";
+            yield "from";
+            yield "a";
+            yield "generator!";
+        }
+
+        let gen=generatorFunction();
+        console.log(gen.next());//date and value
+        console.log(gen.next()); //world
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+
+
+        function* idGenerator(){
+            let id=1;//initial value of id
+            while(true){// infinite loop
+                yield `excelr00${id++}`;// increment id by 1 and return the value
+            }
+        }
+        let idGen=idGenerator();
+        console.log(idGen.next().value);
+        console.log(idGen.next().value);
+        console.log(idGen.next().value);
+    </script>
+</body>
+</html>

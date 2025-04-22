@@ -7,8 +7,26 @@
 </head>
 <body>
     <script>
-        let username=prompt("Enter your userName:");
-        let userPassword=prompt("Enter your userPassword:"); 
+        let userName=prompt("Enter your userName:");
+        let password=prompt("Enter your userPassword:"); 
+         
+        function authentication(userName,password,isSuccess,isFailure){
+           if(userName=="admin" && password=="1234"){
+            isSuccess(userName);
+           }else{
+            isFailure();
+           }
+        }
+
+
+        function isSuccess(userName){
+           document.write(`Welcome ${userName}`);
+        }
+        function isFailure(){
+        document.write("Login failed! Please try again.")
+        }
+
+        authentication(userName,password,isSuccess,isFailure)
     </script>
 </body>
 </html>
