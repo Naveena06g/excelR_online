@@ -10,6 +10,12 @@ import Example3 from './states/Example3.jsx'
 import Child from './props/Child.jsx'
 import Parent from './props/Parent.jsx'
 import Parent2 from './props/Parent2.jsx'
+import Parent3 from './props/Parent3.jsx'
+import Parent4 from './props/Parent4.jsx'
+import GrandParent from './props/PropsDrilling.jsx'
+import GrandParentContext from './context/ContextParent.jsx'
+import Login from './context/Application.jsx'
+import Container from './components/Presentational_Container.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -20,6 +26,12 @@ createRoot(document.getElementById('root')).render(
     {/* <Example2/> */}
     {/* <Example3/> */}
     {/* <Parent/> */}
-    <Parent2/>
+    {/* <Parent2/> */}
+    {/* <Parent3/> */}
+    {/* <Parent4/> */}
+    {/* <GrandParent/> */}
+    {/* <GrandParentContext/> */}
+    {/* <Login/> */}
+    <Container/>
   </StrictMode>,
 )
